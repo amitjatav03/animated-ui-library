@@ -14,7 +14,7 @@ const Cursor = () => {
     }, []);
 
   return (
-    <motion.div className="hidden md:  top-0 left-0 w-12 h-12 border-2 border-zinc-400 rounded-full pointer-events-none z-[9999]"
+    <motion.div className="fixed top-0 left-0 w-12 h-12 border-2 border-zinc-400 rounded-full pointer-events-none z-[9999]"
     animate={{
       x: position.x - 12,
       y: position.y - 12,

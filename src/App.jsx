@@ -45,7 +45,7 @@ const App = () => {
 
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       
-      <div className="container w-[85%] rounded-lg mx-auto relative pt-44 pb-20 flex flex-wrap gap-3 justify-center">
+      <div className="container w-[85%] rounded-lg mx-auto relative pt-44 pb-20 flex flex-wrap gap-10 justify-center">
         <Card title={"Dual Arc Spinner"} desc={"Minimalist loader with two semi-circular arcs rotating in harmony."}>
           <Loader />
         </Card>
