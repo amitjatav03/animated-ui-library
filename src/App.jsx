@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
-import { div } from 'motion/react-client'
-import AnimatedCard from "./components/AnimatedCard";
 import AnimatedButton from "./components/AnimatedButton";
-import LoaderSpinner from "./components/LoaderSpinner";
-import FadeInImage from "./components/FadeInImage";
-import GlassPanel from "./components/GlassPanel";
 import Navbar from './components/Navbar';
 import Card from './components/Card';
 import AnimatedButton2 from './components/AnimatedButton2';
@@ -15,6 +10,8 @@ import LoaderShine from './components/LoaderShine';
 import Cursor from './components/Cursor';
 import LoaderDottedSpin from './components/LoaderDottedSpin';
 import AnimeButton3 from './components/AnimeButton3';
+import AnimeCard1 from './components/AnimeCard1';
+import AnimeCard2 from './components/AnimeCard2';
 
 
 const App = () => {
@@ -38,25 +35,26 @@ const App = () => {
   const toggleTheme = () =>
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
-    
+
   
 
   return (
     <div data-theme={theme} className='w-full max-h-fit bg-slate-200 dark:bg-zinc-900 cursor-none'>
+      {/* custom cursor */}
       <Cursor />
 
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       
-      <div className="container w-[85%] rounded-lg mx-auto relative pt-48 flex flex-wrap gap-10 justify-between">
-        <Card title={"Double Circular Loader"} desc={"Sleek Loader Animation"}>
+      <div className="container w-[85%] rounded-lg mx-auto relative pt-44 pb-20 flex flex-wrap gap-3 justify-center">
+        <Card title={"Dual Arc Spinner"} desc={"Minimalist loader with two semi-circular arcs rotating in harmony."}>
           <Loader />
         </Card>
         
-        <Card title={"Shine Gradient Loader"} desc={"Sleek Gradient Loader Animation"}>
+        <Card title={"Gradient Pulse Ring"} desc={"Elegant circular loader with a flowing gradient that pulses smoothly."}>
           <LoaderShine /> 
         </Card>
 
-        <Card title={"Shine Gradient Loader"} desc={"Sleek Gradient Loader Animation"}>
+        <Card title={"Wobbly Loop Loader"} desc={"Animated dashed loop with an elastic morphing effect during loading"}>
           <LoaderDottedSpin /> 
         </Card>
 
@@ -69,13 +67,16 @@ const App = () => {
         </Card>
         
         <Card title={"SlideUp Button"} desc={"Smooth sliding up hover animation effect"}> 
-          <AnimeButton3 label={'Hover'}/>
+          <AnimeButton3 label={'Hover Me'}/>
         </Card>
 
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card title={"SlideUp Button"} desc={"Smooth sliding up hover animation effect"}>
+          <AnimeCard1 />
+        </Card>
+
+        <Card title={"SlideUp Button"} desc={"Smooth sliding up hover animation effect"}>
+          <AnimeCard2 />
+        </Card>
       </div>
 
     </div>
