@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@font-face {
+  font-family: gilroy;
+  src: url(assets/fonts/gilroy.ttf);
+}
+
+@font-face {
+  font-family: gilroy-bold;
+  src: url(assets/fonts/gilroy-bold.ttf);
+}
+
+@font-face {
+  font-family: gilroy-med;
+  src: url(assets/fonts/gilroy-med.ttf);
+}
+*{
+  font-family: gilroy-med;
+  cursor: none;
+}
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
