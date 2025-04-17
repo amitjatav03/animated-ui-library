@@ -59,22 +59,22 @@ const App = () => {
         </Card>
 
 
-        <Card title={"Button Hover"} desc={"Smooth button hover animation effect"}> 
+        <Card title={"Click Button"} desc={"Clickon the button minimal effect while hovering as well minimalistic effect"}> 
           <AnimatedButton label={'Click Me'}/>
         </Card>
         <Card title={"SlideUp Button"} desc={"Smooth sliding up hover animation effect"}> 
           <AnimatedButton2 label={'Hover'}/>
         </Card>
         
-        <Card title={"SlideUp Button"} desc={"Smooth sliding up hover animation effect"}> 
+        <Card title={"Zoom Out Button"} desc={"Emerged out circle while hovering on the button animation effect"}> 
           <AnimeButton3 label={'Hover Me'}/>
         </Card>
 
-        <Card title={"SlideUp Button"} desc={"Smooth sliding up hover animation effect"}>
+        <Card title={"Card Dual mode"} desc={"Smooth sliding up hover animation effect"}>
           <AnimeCard1 />
         </Card>
 
-        <Card title={"SlideUp Button"} desc={"Smooth sliding up hover animation effect"}>
+        <Card title={"Selection Cards"} desc={"A circle is emerged out from the center of the button"}>
           <AnimeCard2 />
         </Card>
       </div>
