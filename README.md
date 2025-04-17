@@ -1,12 +1,18 @@
-# React + Vite
+> Tech Stack Used:
+1. ReactJs
+2. Tailwin CSS
+3. Framer Motion for animation
+4. Lenis JS for Smooth Scrolling
+5. react-icons library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Components
+1. Card Component - Main Component which consists of Effect section, title and description
+2. Animated Buttons - buttons triggers on hover or click
+3. Animated Loaders
+4. Animated Cards - triggers on hover
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Features Added:
+1. Custom Cursor
+2. Dual theme mode - Dark/Light theme
+3. Responsiveness
+4. Reusable Components
